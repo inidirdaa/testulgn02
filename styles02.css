@@ -1,0 +1,102 @@
+/* Apply styles directly to the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    overflow: hidden;
+    background: url(galaxy.jpg.jpeg) no-repeat fixed;
+    background-size: cover;
+}
+
+.table-container {
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(2, 15, 120, 0.845); /* Semi-transparent darkorchid background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+    width: 85%;
+    max-width: 1000px;
+    border: 2px dashed #fff;
+    opacity: 0.8;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background: transparent;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+/* Header styling */
+th[colspan="10"] {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #210275;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Break row styling */
+.break {
+    background-color: #eee;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle stripe effect */
+}
+
+th:hover {
+    background-color: pink;
+}
+
+td:hover {
+    background-color: pink;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        width: 95%;
+        padding: 15px;
+    }
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    th[colspan="10"] {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .table-container {
+        width: 100%;
+        padding: 10px;
+    }
+    th, td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+    th[colspan="10"] {
+        font-size: 18px;
+    }
+    table, tr, td, th {
+        display: block;
+        width: 100%;
+    }
+    tr {
+        margin-bottom: 10px;
+    }
+}
